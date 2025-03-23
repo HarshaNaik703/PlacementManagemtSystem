@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="admin-profile.html">Profile</a>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="#" id="logout">Logout</a>
+    </nav>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <h2>Add Company</h2>
+        <form id="addCompanyForm">
+            <input type="text" id="companyName" placeholder="Company Name" required>
+            <input type="number" id="companyPackage" placeholder="Package (LPA)" step="0.01" min="0" required>
+            <input type="date" id="sessionDate" required>
+            <button type="submit">Add Company</button>
+        </form>
+        <h2>Students</h2>
+        <div id="students-list">
+            <!-- Students will be populated here by JS -->
+        </div>
+        <h2>Companies</h2>
+        <div id="companies-list">
+            <!-- Companies will be populated here by JS -->
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
